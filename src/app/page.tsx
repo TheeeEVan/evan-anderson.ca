@@ -1,8 +1,7 @@
+/* eslint-disable @typescript-eslint/no-unused-vars, no-unused-vars */
 "use client"
 import { useEffect, useState } from "react"
 import { Typewriter } from "react-simple-typewriter"
-import { useMouse } from "@uidotdev/usehooks"
-import Link from "next/link"
 import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa"
 import TransitionLink from "../components/TransitionLink"
 import { useSearchParams } from "next/navigation"
