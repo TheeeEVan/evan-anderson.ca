@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-unused-vars, no-unused-vars */
 "use client"
-import { useEffect, useState } from "react"
+import { Suspense, useEffect, useState } from "react"
 import { Typewriter } from "react-simple-typewriter"
 import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa"
 import TransitionLink from "../components/TransitionLink"
@@ -24,6 +24,14 @@ function lerpColor(a: string, b: string, t: number) {
 }
 
 export default function Home() {
+  return (
+    <Suspense>
+      <HomeContent />
+    </Suspense>
+  )
+}
+
+function HomeContent() {
   const searchParams = useSearchParams()
   const SKIP_ANIM = searchParams.get("skip") === "true"
 
