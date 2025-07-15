@@ -9,7 +9,7 @@
 }
 
 @theme {
-  --animate-fade-in: fade-in 2s;
+  --animate-fade-in: fade-in 2s 1;
 
   @keyframes fade-in {
     0% {
